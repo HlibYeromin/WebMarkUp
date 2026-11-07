@@ -30,6 +30,10 @@ a:hover, a:focus {
 	color: #13261a;
 }
 
+a:active {
+	color: #5f8f3f;
+}
+
 .site-header {
 	position: relative;
 	display: flex;
@@ -51,6 +55,31 @@ a:hover, a:focus {
 	height: auto;
 }
 
+.logo-name {
+	font-size: 1.1rem;
+	line-height: 1.1;
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+}
+
+.logo-name small {
+	display: block;
+	font-size: 0.45rem;
+	letter-spacing: 0.15em;
+}
+
+.logo:hover, .logo:focus {
+	color: #ffffff;
+}
+
+.menu-toggle {
+	display: none;
+}
+
+.menu-button {
+	display: none;
+}
+
 .main-nav {
 	flex: 1;
 	margin-left: 3rem;
@@ -65,14 +94,335 @@ a:hover, a:focus {
 	list-style: none;
 }
 
+.main-nav li:last-child {
+	margin-left: auto;
+}
+
 .main-nav a {
 	display: block;
 	padding: 0.35rem 0.5rem;
 	font-family: "Lato", Arial, sans-serif;
 	font-size: 0.85rem;
+	letter-spacing: 0.03em;
 	text-transform: uppercase;
 	text-decoration: none;
 	color: #ffffff;
+	white-space: nowrap;
+	border-radius: 0.35rem;
+}
+
+.main-nav a:hover, .main-nav a:focus {
+	color: #ffffff;
+	background-color: rgba(255, 255, 255, 0.15);
+}
+
+.main-nav a[aria-current="page"] {
+	color: #1d3a1d;
+	background-color: #ffffff;
+}
+
+.hero {
+	position: relative;
+	display: flex;
+	align-items: center;
+	min-height: 31rem;
+	padding: 0 3.5rem;
+	overflow: hidden;
+	color: #ffffff;
+}
+
+.hero > img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	filter: brightness(0.7);
+}
+
+.hero-text {
+	position: relative;
+	max-width: 34rem;
+}
+
+.hero h1 {
+	margin: 0 0 0.5rem;
+	font-size: 2.25rem;
+	letter-spacing: 0.03em;
+	word-spacing: 0.1em;
+	text-transform: uppercase;
+}
+
+.hero p {
+	margin: 0 0 1rem;
+	letter-spacing: 0.04em;
+}
+
+.button {
+	display: inline-block;
+	padding: 0.45rem 1rem;
+	font-weight: 500;
+	letter-spacing: 0.04em;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #1d3a1d;
+	background-color: #ffffff;
+	border-width: 2px;
+	border-style: solid;
+	border-color: #1d3a1d;
+	border-radius: 0.5rem;
+}
+
+.button:hover, .button:focus {
+	color: #ffffff;
+	background-color: #2d5a2d;
+	border-color: #ffffff;
+}
+
+.chapters {
+	padding: 4rem 3.5rem;
+	text-align: center;
+}
+
+.chapters h2 {
+	max-width: 40rem;
+	margin: 0 auto 2.5rem;
+	font-size: 1.5rem;
+	letter-spacing: 0.06em;
+	text-transform: uppercase;
+}
+
+.cards {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 2rem 2.5rem;
+	max-width: 68rem;
+	margin: 0 auto;
+	padding: 0;
+	list-style: none;
+}
+
+.card {
+	position: relative;
+	height: 28rem;
+	overflow: hidden;
+	text-align: left;
+	color: #ffffff;
+	background-color: #1d3a1d;
+}
+
+.card img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	filter: brightness(0.55);
+	transition: transform 0.4s;
+}
+
+.card:hover img {
+	transform: scale(1.05);
+}
+
+.card h3, .card p, .card a {
+	position: absolute;
+	left: 1rem;
+	right: 1rem;
+	margin: 0;
+}
+
+.card h3 {
+	top: 1rem;
+	font-size: 0.95rem;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+}
+
+.card p {
+	top: 4rem;
+	font-size: 0.9rem;
+	font-weight: 500;
+	line-height: 1.6;
+	letter-spacing: 0.08em;
+}
+
+.card a {
+	bottom: 2.5rem;
+	font-size: 0.8rem;
+	font-weight: 600;
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #ffffff;
+}
+
+.card a:hover, .card a:focus {
+	color: #ffffff;
+	text-decoration: underline;
+}
+
+.page-title {
+	margin: 3rem 0 2rem;
+	font-size: 2.5rem;
+	letter-spacing: 0.06em;
+	word-spacing: 0.2em;
+	text-align: center;
+	text-transform: uppercase;
+	color: #2d5a2d;
+}
+
+.stories {
+	max-width: 65rem;
+	margin: 0 auto;
+	padding: 0 3.5rem;
+	list-style: none;
+}
+
+.story {
+	display: flex;
+	align-items: center;
+	gap: 5rem;
+	margin-bottom: 4rem;
+}
+
+.story > article, .story > figure {
+	flex: 1;
+}
+
+.story h2 {
+	margin: 0 0 0.75rem;
+	font-size: 1.3rem;
+	color: #2d5a2d;
+}
+
+.story p {
+	margin: 0 0 0.4rem;
+	font-size: 0.95rem;
+	line-height: 1.65;
+}
+
+.story p + p {
+	text-indent: 1.5em;
+}
+
+
+.story figure {
+	margin: 0;
+}
+
+figcaption {
+	margin-top: 0.4rem;
+	font-size: 0.8rem;
+	font-style: italic;
+	color: #555555;
+}
+
+.fact {
+	box-sizing: border-box;
+	width: calc(100% - 7rem);
+	max-width: 58rem;
+	margin: 0 auto 4rem;
+	padding: 1.5rem 2rem;
+	background-color: #f3f7f1;
+	border-width: 0 0 0 0.35rem;
+	border-style: solid;
+	border-color: #2d5a2d;
+}
+
+.fact h2 {
+	margin: 0 0 0.75rem;
+	font-size: 1.2rem;
+	color: #2d5a2d;
+}
+
+.fact p, .fact ul {
+	margin: 0 0 0.5rem;
+}
+
+
+.contact {
+	max-width: 26rem;
+	margin: 3rem auto;
+	padding: 0 1rem;
+	text-align: center;
+}
+
+.contact h1 {
+	margin: 0;
+	font-size: 3rem;
+	letter-spacing: 0.04em;
+	word-spacing: 0.1em;
+	text-transform: uppercase;
+}
+
+.contact-intro {
+	margin: 0 0 1rem;
+	font-weight: 500;
+	letter-spacing: 0.03em;
+}
+
+.contact-form fieldset {
+	margin: 0;
+	padding: 0;
+	border-style: none;
+}
+
+.contact-form legend {
+	width: 100%;
+	padding: 0;
+	font-size: 0.8rem;
+	font-weight: 600;
+	text-align: center;
+}
+
+.contact-form label {
+	display: block;
+	margin: 0.75rem 0 0.2rem;
+	font-size: 0.85rem;
+}
+
+.contact-form input, .contact-form select, .contact-form textarea {
+	box-sizing: border-box;
+	width: 100%;
+	padding: 0.5rem;
+	font: inherit;
+	background-color: #ffffff;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #555555;
+	border-radius: 0.25rem;
+}
+
+.contact-form textarea {
+	min-height: 5rem;
+	resize: vertical;
+}
+
+.contact-form input:focus, .contact-form select:focus, .contact-form textarea:focus {
+	border-color: #2d5a2d;
+	outline: 2px solid #a9c9a0;
+}
+
+.contact-form input[type="submit"] {
+	width: 66%;
+	margin-top: 1.75rem;
+	font-size: 0.85rem;
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+	color: #ffffff;
+	background-color: #2d5a2d;
+	border-color: #1d3a1d;
+	cursor: pointer;
+}
+
+.contact-form input[type="submit"]:hover, .contact-form input[type="submit"]:focus {
+	background-color: #1d3a1d;
+}
+
+.contact .fact {
+	width: 100%;
+	margin: 2.5rem 0 0;
+	text-align: left;
 }
 
 .site-footer {
@@ -83,3 +433,54 @@ a:hover, a:focus {
 	color: #ffffff;
 	background-color: #13261a;
 }
+
+.footer-logo img {
+	width: 3.25rem;
+	height: auto;
+}
+
+.copyright {
+	grid-column: 1;
+	margin: 0.4rem 0 0;
+	font-size: 0.7rem;
+	line-height: 1.3;
+	letter-spacing: 0.05em;
+}
+
+.copyright span {
+	display: block;
+}
+
+.footer-contact {
+	grid-column: 2;
+	grid-row: 1 / span 2;
+	margin: 0;
+	font-size: 0.7rem;
+	letter-spacing: 0.04em;
+	text-transform: uppercase;
+}
+
+.footer-contact a {
+	display: block;
+	font-size: 0.9rem;
+	font-weight: 600;
+	text-decoration: none;
+	color: #ffffff;
+}
+
+.footer-contact a:hover, .footer-contact a:focus {
+	color: #ffffff;
+	text-decoration: underline;
+}
+
+
+@media screen and (min-width: 769px) {
+	.hero h1 {
+		font-size: 2.5rem;
+	}
+
+	.story figure img {
+		width: 100%;
+	}
+}
+
