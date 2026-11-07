@@ -1,0 +1,5 @@
+﻿Student name: Hlib Yeromin
+Student number: 759945
+Student class: IT1B
+GitHub Repository: https://github.com/HlibYeromin/WebMarkUp
+GitHub Pages URL: https://hlibyeromin.github.io/WebMarkUp/

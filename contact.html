@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="description" content="Do you have any questions about Slavutych, its history or traditions? Fill in the contact form and we will write back to you." />
+		<meta name="keywords" content="Slavutych, contact, questions, form, Ukraine" />
+		<meta name="author" content="Hlib Yeromin" />
+		<title>Slavutych | Contact us</title>
+		<link rel="icon" type="image/svg+xml" href="img/favicon.svg" />
+		<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&amp;family=Lato:wght@400;700&amp;display=swap" />
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+	</head>
+	<body>
+		<header class="site-header">
+			<a class="logo" href="index.html">
+				<img src="img/logo.png" alt="Slavutych logo" title="Slavutych - home" />
+				<span class="logo-name">Slavutych <small>Brochure website</small></span>
+			</a>
+			<input type="checkbox" id="menu-toggle" class="menu-toggle" />
+			<label for="menu-toggle" class="menu-button" title="Menu">&#9776;</label>
+			<nav class="main-nav">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="history.html">History</a></li>
+					<li><a href="architecture.html">Architecture</a></li>
+					<li><a href="traditions.html">Traditions</a></li>
+					<li><a href="war.html">War in Slavutych</a></li>
+					<li><a href="contact.html" aria-current="page">Contact</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<main>
+			<section class="contact">
+				<h1>Contact us</h1>
+				<p class="contact-intro">Do you have any remaining questions? <strong>Feel free to write to us</strong></p>
+
+				<form class="contact-form" action="contact.html" method="get">
+					<fieldset>
+						<legend>Fields with * are mandatory</legend>
+
+						<label for="salutation">Salutation*</label>
+						<select id="salutation" name="salutation" required="required">
+							<option value="">Select an option</option>
+							<option value="mr">Mr.</option>
+							<option value="mrs">Mrs.</option>
+							<option value="other">Other</option>
+						</select>
+
+						<label for="name">Name*</label>
+						<input type="text" id="name" name="name" required="required" />
+
+						<label for="email">Email*</label>
+						<input type="email" id="email" name="email" required="required" />
+
+						<label for="phone">Phone</label>
+						<input type="tel" id="phone" name="phone" />
+
+						<label for="message">Message*</label>
+						<textarea id="message" name="message" rows="4" cols="30" required="required"></textarea>
+
+						<input type="submit" value="Submit" />
+					</fieldset>
+				</form>
+
+				<aside class="fact">
+					<h2>Planning a visit?</h2>
+					<p>The currency of Ukraine is the hryvnia (&#8372;). It is easiest to exchange your &euro; or &pound; at a bank in Kyiv <em>before</em> travelling to Slavutych.</p>
+				</aside>
+			</section>
+		</main>
+
+		<footer class="site-footer">
+			<a class="footer-logo" href="index.html">
+				<img src="img/logo.png" alt="Slavutych logo" title="Back to home" />
+			</a>
+			<p class="copyright">&copy;2026 Slavutych Project <span>All rights reserved</span></p>
+		</footer>
+	</body>
+</html>
