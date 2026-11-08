@@ -1,4 +1,4 @@
-﻿/* Main stylesheet */
+/* Main stylesheet */
 html {
 	font-size: 100%;
 }
@@ -72,7 +72,7 @@ a:active {
 	color: #ffffff;
 }
 
-.menu-toggle {
+.menu-toggle, .cookie-check {
 	display: none;
 }
 
@@ -503,6 +503,51 @@ figcaption {
 	text-decoration: underline;
 }
 
+.cookie {
+	position: fixed;
+	right: 1.5rem;
+	bottom: 1.5rem;
+	left: 1.5rem;
+	z-index: 9999;
+	max-width: 38rem;
+	margin: 0 auto;
+	padding: 0.85rem 1.25rem;
+	background-color: #ffffff;
+	border-width: 2px;
+	border-style: solid;
+	border-color: #1d3a1d;
+	border-radius: 0.5rem;
+	box-shadow: 0 0.25rem 1rem rgba(0, 0, 0, 0.2);
+}
+
+.cookie-btn {
+	float: right;
+	margin-left: 1rem;
+	padding: 0.35rem 1.1rem;
+	font-size: 0.85rem;
+	font-weight: 600;
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+	color: #ffffff;
+	background-color: #2d5a2d;
+	border-radius: 0.35rem;
+	cursor: pointer;
+}
+
+.cookie-btn:hover, .cookie-btn:focus {
+	background-color: #1d3a1d;
+}
+
+.cookie p {
+	margin: 0;
+	overflow: hidden;
+	font-size: 0.9rem;
+	line-height: 1.5;
+}
+
+.cookie-check:checked + .cookie {
+	display: none;
+}
 
 @media screen and (min-width: 769px) {
 	.hero h1 {
